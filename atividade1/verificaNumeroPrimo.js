@@ -23,9 +23,9 @@ function verificaNum(num) {
 
 function printResult(num) {
   if (verificaNum(num)) {
-    console.log("É primo");
+    console.log(1);
   } else {
-    console.log("Não é primo");
+    console.log(0); //Não é primo
   }
 }
 
