@@ -29,5 +29,5 @@ function printResult(num) {
   }
 }
 
-const inputN = parseInt(prompt("Digite um número maior que zero para verificar se é um número primo:"));
-printResult(inputN);
+// const inputN = parseInt(prompt("Digite um número maior que zero para verificar se é um número primo:"));
+printResult(4294967295);
