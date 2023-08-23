@@ -35,12 +35,12 @@ const matrizB = [
 ];
 console.log("Matriz A: ");
 matrizA.forEach(row => {
-    console.log(row.join(' '));
+    console.log(row.join('\t'));
 }),
 console.log('------------------------------------------');
 console.log("Matriz B: ");
 matrizB.forEach(row => {
-    console.log(row.join(' '));
+    console.log(row.join('\t'));
 }),
 console.log('------------------------------------------');
 const resultMatriz = multiMatrizes(matrizA, matrizB);
@@ -50,6 +50,6 @@ if (typeof resultMatriz === "string") {
 } else {
     console.log("Resultado:");
     resultMatriz.forEach(row => {
-        console.log(row.join(' '));
+        console.log(row.join('\t'));
     });
 }
