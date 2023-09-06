@@ -28,7 +28,7 @@ app.get('/dividir/:a/:b', (req, res) => {
     let b = req.params.b;
     res.send(`${a} / ${b} = ${calc.dividir(a,b)}`);
 });
-const PORT = 8081;
+const PORT = 8080;
 app.listen(PORT, function () {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
