@@ -1,3 +1,0 @@
-viajo até a pasta index: node .\index.js
-npm init
-npm install express@4.18.2 
