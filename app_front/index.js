@@ -15,11 +15,11 @@ app.get('/', (req, res)=>{
 });
 
 app.post('/dados', (req, res)=>{
-    let name = req.params.name;
-    let password = req.params.pwd;
-    let addres = req.params.addres;
-    let date = req.params.date;
-    let phone = req.params.phone;
+    let name = req.body.name;
+    let password = req.body.pwd;
+    let addres = req.body.addres;
+    let date = req.body.date;
+    let phone = req.body.phone;
     res.render('dados.html', {name, password, addres, date, phone});
 });
 
