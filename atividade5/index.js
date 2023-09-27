@@ -1,13 +1,13 @@
 // const { application } = require('express');
 const express = require('express');
 const mustache = require('mustache-express');
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 const app = express();
 
 app.engine('html', mustache());
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(express.urlencoded({extended:true}));
 
 app.get('/', (req, res)=>{
     res.render('index.html');
@@ -18,6 +18,8 @@ app.post('/dados', (req, res)=>{
     let password = req.body.pwd;
     let address = req.body.address;
     let date = req.body.date;
+    let stringDate = new Date(date);
+    date = stringDate.toDateString();
     let phone = req.body.phone;
     res.render('dados.html', {name, password, address, date, phone});
 });
