@@ -1,7 +1,5 @@
-// const { application } = require('express');
 const express = require('express');
 const mustache = require('mustache-express');
-// const bodyParser = require("body-parser");
 const app = express();
 
 app.engine('html', mustache());
