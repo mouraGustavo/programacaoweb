@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Formulário</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Formulário de consulta (Paciente: {{Pessoa.name}})</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h3>Dados do Paciente</h3>
+                <div class="mb-3 mt-3">
+                    <label for="name" class="form-label">Nome: {{Pessoa.name}}</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="cpf" class="form-label">CPF: {{Pessoa.cpf}}</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="bday" class="form-label">Data de Nascimento: {{Pessoa.bday}}</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="address" class="form-label">Endereço: {{Pessoa.address}}</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="phone" class="form-label">Telefone: {{Pessoa.phone}}</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">E-mail: {{Pessoa.email}}</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="cep" class="form-label">CEP: {{Pessoa.cep}}</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="uf" class="form-label">Estado: {{Pessoa.uf}}</label>
+                </div>
+                <br>
+                <h3>Dados da Consulta</h3>
+                <div class="mb-3 mt-3">
+                    <label for="date" class="form-label">Data do Agendamento: {{DadosConsulta.date}}</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="especialidade" class="form-label">Nome: {{DadosConsulta.especialidade}}</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="alergia" class="form-label">Alergias reportadas: {{DadosConsulta.alergia}}</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="infoAdd" class="form-label">Inf. Adicionais: {{DadosConsulta.infoAdd}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
