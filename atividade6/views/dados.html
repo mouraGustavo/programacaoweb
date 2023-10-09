@@ -12,31 +12,23 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Formulário de consulta (Paciente: {{name}})</h1>
+                <h1>Formulário de consulta (Paciente: {{Pessoa.name}})</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
                 <h3>Dados da Consulta</h3>
                 <div class="mb-3 mt-3">
-                    <label for="name" class="form-label">Nome:</label>
-                    <div>{{name}}</div>
+                    <label for="name" class="form-label">Nome: {{Pessoa.name}}</label>
                 </div>
                 <div class="mb-3 mt-3">
-                <label for="address" class="form-label">Endereço:</label>
-                <div>{{address}}</div>
+                    <label for="address" class="form-label">Endereço: {{Pessoa.address}}</label>
                 </div>
                 <div class="mb-3 mt-3">
-                    <label for="phone" class="form-label">Telefone:</label>
-                    <div>{{phone}}</div>
+                    <label for="phone" class="form-label">Telefone: {{Pessoa.phone}}</label>
                 </div>
                 <div class="mb-3 mt-3">
-                    <label for="date" class="form-label">Data:</label>
-                    <div>{{date}}</div>
-                </div>
-                <div class="mb-3">
-                <label for="pwd" class="form-label">Password:</label>
-                <div>{{pwd}}</div>
+                    <label for="date" class="form-label">Data do Agendamento: {{Pessoa.date}}</label>
                 </div>
             </div>
         </div>

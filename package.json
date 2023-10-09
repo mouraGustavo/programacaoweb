@@ -1,7 +1,7 @@
 {
-  "name": "app_estoque",
+  "name": "programacaoweb",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repositório utilizado para a disciplina de PROGRAMAÇÃO PARA WEB",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "devDependencies": {}
 }
