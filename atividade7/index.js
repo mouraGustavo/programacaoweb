@@ -23,11 +23,10 @@ app.post('/dados', (req, res)=>{
         { name: 'uf', label: 'UF' },
         { name: 'email', label: 'Email' },
         { name: 'especiality', label: 'Especialidade Médica' },
-        { name: 'alergia', label: 'Alergia a Medicamentos' }
+        // { name: 'alergia', label: 'Alergia a Medicamentos' }
         // { name: 'info_add', label: 'Informações Adicionais' }
     ];
     
-    // Verificar quais campos obrigatórios não estão preenchidos
     const missingFields = requiredFields.filter(field => !req.body[field.name]);
 
     if (missingFields.length > 0) {
